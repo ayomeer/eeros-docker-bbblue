@@ -304,7 +304,7 @@ CMakeFiles/robot_project.dir/src/ControlSystem.cpp.o: \
  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/core/PeriodicCounter.hpp \
  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/core/Statistics.hpp \
  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/task/Periodic.hpp \
- /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/Constant.hpp \
+ /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/PeripheralInput.hpp \
  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/Blockio.hpp \
  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/Block.hpp \
  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/Input.hpp \
@@ -313,8 +313,7 @@ CMakeFiles/robot_project.dir/src/ControlSystem.cpp.o: \
  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/SignalInterface.hpp \
  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/Output.hpp \
  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/IndexOutOfBoundsFault.hpp \
- /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/Gain.hpp \
- /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/math.h \
+ /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/PeripheralOutput.hpp \
  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/cmath \
  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/math.h \
  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/bits/math-vector.h \
@@ -339,4 +338,5 @@ CMakeFiles/robot_project.dir/src/ControlSystem.cpp.o: \
  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/tr1/modified_bessel_func.tcc \
  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/tr1/poly_hermite.tcc \
  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/tr1/poly_laguerre.tcc \
- /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/tr1/riemann_zeta.tcc
+ /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/tr1/riemann_zeta.tcc \
+ /workspaces/AutMobRos/inc/customBlocks/customController.hpp

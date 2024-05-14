@@ -1,0 +1,161 @@
+{
+	"inputs" : 
+	[
+		{
+			"path" : "CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/3.22.3/CMakeSystem.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/share/cmake/OEToolchainConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/3.22.3/CMakeCCompiler.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/3.22.3/CMakeCXXCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/Platform/Linux.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/CMakeCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/Compiler/GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/EEROS/cmake/EEROSConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/EEROS/cmake/EEROSConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.22/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/EEROS/cmake/EEROS.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/EEROS/cmake/EEROS-debug.cmake"
+		}
+	],
+	"kind" : "cmakeFiles",
+	"paths" : 
+	{
+		"build" : "/workspaces/AutMobRos/build",
+		"source" : "/workspaces/AutMobRos"
+	},
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}

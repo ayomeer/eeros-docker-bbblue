@@ -1,23 +1,28 @@
 #include "ControlSystem.hpp"
 
 ControlSystem::ControlSystem(double dt)
-    : myConstant(2.0), myGain(2.0),
+    : encoder("enc1"),  // NOTE: these strings are IDs as defined in
+      motor("motor1"),  //        HwConfig json file, not just names
       timedomain("Main time domain", dt, true)
 {
     // Name all blocks
-    myConstant.setName("My constant");
-    myGain.setName("My gain");
+    encoder.setName("Encoder");
+    controller.setName("Controller");
+    motor.setName("Motor");
 
-    // Name all signals
-    myConstant.getOut().getSignal().setName("My constant value");
-    myGain.getOut().getSignal().setName("My constant value multiplied with my gain");
+    // Name all signals (tied to outputs)
+    encoder.getOut().getSignal().setName("phi [rad]");
+    controller.getOut().getSignal().setName("U [V]");
 
     // Connect signals
-    myGain.getIn().connect(myConstant.getOut());
+    controller.getIn().connect(encoder.getOut());
+    motor.getIn().connect(controller.getOut());
 
-    // Add blocks to timedomain
-    timedomain.addBlock(myConstant);
-    timedomain.addBlock(myGain);
+    // Add blocks to main time domain 
+    // (!) In order of execution!
+    timedomain.addBlock(encoder);
+    timedomain.addBlock(controller);
+    timedomain.addBlock(motor);
 
     // Add timedomain to executor
     eeros::Executor::instance().add(timedomain);

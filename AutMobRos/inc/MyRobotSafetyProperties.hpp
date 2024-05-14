@@ -14,7 +14,7 @@ public:
     eeros::safety::SafetyLevel slSystemOff;
     eeros::safety::SafetyLevel slSystemOn;
 
-    eeros::safety::SafetyEvent slEmergency;
+    eeros::safety::SafetyLevel slEmergency;
     // eeros::safety::SafetyEvent slEmergencyStopping;
 
     // eeros::safety::SafetyEvent slDriveEnabled;
@@ -23,6 +23,9 @@ public:
     // Define all possible events
     eeros::safety::SafetyEvent seSystemOff;
     eeros::safety::SafetyEvent seSystemOn;
+
+    eeros::safety::SafetyEvent seEmergency;
+    eeros::safety::SafetyEvent seResetEmergency;
 
 
 private:

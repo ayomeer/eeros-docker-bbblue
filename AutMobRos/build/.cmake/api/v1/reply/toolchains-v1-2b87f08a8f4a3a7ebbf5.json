@@ -1,0 +1,103 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/11.4.0/include",
+						"/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/11.4.0/include-fixed",
+						"/opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include"
+					],
+					"linkDirectories" : 
+					[
+						"/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/11.4.0",
+						"/opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib",
+						"/opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/11.4.0",
+						"/opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"gcc",
+						"gcc_s",
+						"c",
+						"gcc",
+						"gcc_s"
+					]
+				},
+				"path" : "/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc",
+				"version" : "11.4.0"
+			},
+			"language" : "C",
+			"sourceFileExtensions" : 
+			[
+				"c",
+				"m"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0",
+						"/opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/arm-poky-linux-gnueabi",
+						"/opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/backward",
+						"/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/11.4.0/include",
+						"/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/11.4.0/include-fixed",
+						"/opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include"
+					],
+					"linkDirectories" : 
+					[
+						"/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/11.4.0",
+						"/opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/lib",
+						"/opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/11.4.0",
+						"/opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"stdc++",
+						"m",
+						"gcc_s",
+						"gcc",
+						"c",
+						"gcc_s",
+						"gcc"
+					]
+				},
+				"path" : "/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++",
+				"version" : "11.4.0"
+			},
+			"language" : "CXX",
+			"sourceFileExtensions" : 
+			[
+				"C",
+				"M",
+				"c++",
+				"cc",
+				"cpp",
+				"cxx",
+				"mm",
+				"mpp",
+				"CPP",
+				"ixx",
+				"cppm"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}

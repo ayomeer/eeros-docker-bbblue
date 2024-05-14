@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/workspaces/AutMobRos/build",
+  "command": "/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi  -I/workspaces/AutMobRos/inc -I/workspaces/AutMobRos/src  -O2 -pipe -g -feliminate-unused-debug-types  -pthread -std=gnu++17 -o CMakeFiles/robot_project.dir/src/ControlSystem.cpp.o -c /workspaces/AutMobRos/src/ControlSystem.cpp",
+  "file": "/workspaces/AutMobRos/src/ControlSystem.cpp"
+},
+{
+  "directory": "/workspaces/AutMobRos/build",
+  "command": "/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi  -I/workspaces/AutMobRos/inc -I/workspaces/AutMobRos/src  -O2 -pipe -g -feliminate-unused-debug-types  -pthread -std=gnu++17 -o CMakeFiles/robot_project.dir/src/MyRobotSafetyProperties.cpp.o -c /workspaces/AutMobRos/src/MyRobotSafetyProperties.cpp",
+  "file": "/workspaces/AutMobRos/src/MyRobotSafetyProperties.cpp"
+},
+{
+  "directory": "/workspaces/AutMobRos/build",
+  "command": "/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++   -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a8 -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi --sysroot=/opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi  -I/workspaces/AutMobRos/inc -I/workspaces/AutMobRos/src  -O2 -pipe -g -feliminate-unused-debug-types  -pthread -std=gnu++17 -o CMakeFiles/robot_project.dir/src/main.cpp.o -c /workspaces/AutMobRos/src/main.cpp",
+  "file": "/workspaces/AutMobRos/src/main.cpp"
+}
+]

@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.5.1)
 project(robot_project)   # MODIFY Project name
 
 set(CMAKE_CXX_STANDARD 14)
-
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 
 find_package(EEROS REQUIRED)

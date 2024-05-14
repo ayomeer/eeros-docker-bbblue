@@ -5,15 +5,17 @@ MyRobotSafetyProperties::MyRobotSafetyProperties(ControlSystem &cs, double dt)
     
       slSystemOff("System is offline"),
       slSystemOn("System is online"),
-
       slEmergency("System is in emergency mode (stopped)"),
+
     //   slEmergencyStopping("System is emergency stopping"),
 
     //   slDriveEnabled("System drive power enabled"),
     //   slDriving("System Driving"),
 
       seSystemOn("Startup the system"),
-      seSystemOff("Shutdown the system")
+      seSystemOff("Shutdown the system"),
+      seEmergency("Transitioning into emergency state"),
+      seResetEmergency("Transitioning out of emergency state")
 {
     eeros::hal::HAL &hal = eeros::hal::HAL::instance();
 
@@ -32,36 +34,51 @@ MyRobotSafetyProperties::MyRobotSafetyProperties(ControlSystem &cs, double dt)
     // Add all safety levels to the safety system (lowest to highest)
     addLevel(slSystemOff);
     addLevel(slSystemOn);
+    addLevel(slEmergency);
+
+    // Add events to multiple safety levels 
+    //addEventToAllLevelsBetween(lowlevel, highlevel, event, targetLevel, kPublicEvent/kPrivateEvent);
+    addEventToAllLevelsBetween(slSystemOff, slEmergency, seSystemOff, slSystemOff, kPublicEvent); // enable Ctr+C everywhere
 
     // Add events to individual safety levels
     slSystemOff.addEvent(seSystemOn, slSystemOn, kPublicEvent);
-    slSystemOn.addEvent(seSystemOff, slSystemOff, kPublicEvent);
-    slEmergency.
 
+    //slSystemOn.addEvent(seSystemOff, slSystemOff, kPublicEvent);
+    slSystemOn.addEvent(seEmergency, slEmergency, kPublicEvent);
 
-    // Add events to multiple safety levels
-    // addEventToAllLevelsBetween(lowerLevel, upperLevel, event, targetLevel, kPublicEvent/kPrivateEvent);
+    slEmergency.addEvent(seResetEmergency, slSystemOn, kPublicEvent);
+    
 
-    // Define input actions for all levels
+    // Define input actions for all levels (check for signals that trigger safety events)
     // /!\ All critical inputs and outputs must be defined in EACH level
-    slSystemOn.setInputActions({
-        ignore(onBoardButtonMode), 
-        check(onBoardButtonPause, false, seSystemOff)
-    });
     slSystemOff.setInputActions({
         ignore(onBoardButtonMode), 
         ignore(onBoardButtonPause)
     });
+    slSystemOn.setInputActions({
+        ignore(onBoardButtonMode), 
+        check(onBoardButtonPause, false, seEmergency)
+    });
+    slEmergency.setInputActions({
+        check(onBoardButtonMode, false, seResetEmergency), 
+        ignore(onBoardButtonPause)
+    });
+
 
     // Define output actions for all levels
-    slSystemOn.setOutputActions({
-        set(onBoardLEDgreen, true), 
-        set(onBoardLEDred, true)
-    });
     slSystemOff.setOutputActions({
         set(onBoardLEDgreen, false), 
         set(onBoardLEDred, false)
     });
+    slSystemOn.setOutputActions({
+        set(onBoardLEDgreen, true), 
+        set(onBoardLEDred, false)
+    });
+    slEmergency.setOutputActions({
+        set(onBoardLEDgreen, false), 
+        set(onBoardLEDred, true)
+    });
+
 
     // Define and add level actions
     slSystemOff.setLevelAction([&](SafetyContext *privateContext) {
@@ -77,7 +94,7 @@ MyRobotSafetyProperties::MyRobotSafetyProperties(ControlSystem &cs, double dt)
     // Define entry level
     setEntryLevel(slSystemOff);
 
-    // Define exit function
+    // Define exit function (Ctr+C)
     exitFunction = ([&](SafetyContext *privateContext) {
         privateContext->triggerEvent(seSystemOff);
     });

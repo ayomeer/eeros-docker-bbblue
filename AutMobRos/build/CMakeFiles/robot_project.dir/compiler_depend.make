@@ -306,7 +306,7 @@ CMakeFiles/robot_project.dir/src/ControlSystem.cpp.o: ../src/ControlSystem.cpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/core/PeriodicCounter.hpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/core/Statistics.hpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/task/Periodic.hpp \
-  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/Constant.hpp \
+  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/PeripheralInput.hpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/Blockio.hpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/Block.hpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/Input.hpp \
@@ -315,8 +315,7 @@ CMakeFiles/robot_project.dir/src/ControlSystem.cpp.o: ../src/ControlSystem.cpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/SignalInterface.hpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/Output.hpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/IndexOutOfBoundsFault.hpp \
-  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/Gain.hpp \
-  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/math.h \
+  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/PeripheralOutput.hpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/cmath \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/math.h \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/bits/math-vector.h \
@@ -341,7 +340,8 @@ CMakeFiles/robot_project.dir/src/ControlSystem.cpp.o: ../src/ControlSystem.cpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/tr1/modified_bessel_func.tcc \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/tr1/poly_hermite.tcc \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/tr1/poly_laguerre.tcc \
-  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/tr1/riemann_zeta.tcc
+  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/tr1/riemann_zeta.tcc \
+  ../inc/customBlocks/customController.hpp
 
 CMakeFiles/robot_project.dir/src/MyRobotSafetyProperties.cpp.o: ../src/MyRobotSafetyProperties.cpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/stdc-predef.h \
@@ -649,7 +649,7 @@ CMakeFiles/robot_project.dir/src/MyRobotSafetyProperties.cpp.o: ../src/MyRobotSa
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/core/PeriodicCounter.hpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/core/Statistics.hpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/task/Periodic.hpp \
-  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/Constant.hpp \
+  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/PeripheralInput.hpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/Blockio.hpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/Block.hpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/Input.hpp \
@@ -658,8 +658,7 @@ CMakeFiles/robot_project.dir/src/MyRobotSafetyProperties.cpp.o: ../src/MyRobotSa
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/SignalInterface.hpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/Output.hpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/IndexOutOfBoundsFault.hpp \
-  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/Gain.hpp \
-  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/math.h \
+  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/PeripheralOutput.hpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/cmath \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/math.h \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/bits/math-vector.h \
@@ -684,7 +683,8 @@ CMakeFiles/robot_project.dir/src/MyRobotSafetyProperties.cpp.o: ../src/MyRobotSa
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/tr1/modified_bessel_func.tcc \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/tr1/poly_hermite.tcc \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/tr1/poly_laguerre.tcc \
-  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/tr1/riemann_zeta.tcc
+  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/tr1/riemann_zeta.tcc \
+  ../inc/customBlocks/customController.hpp
 
 CMakeFiles/robot_project.dir/src/main.cpp.o: ../src/main.cpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/stdc-predef.h \
@@ -1033,7 +1033,7 @@ CMakeFiles/robot_project.dir/src/main.cpp.o: ../src/main.cpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/bits/list.tcc \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/NotConnectedFault.hpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/NaNOutputFault.hpp \
-  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/Constant.hpp \
+  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/PeripheralInput.hpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/Blockio.hpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/Block.hpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/Input.hpp \
@@ -1042,8 +1042,7 @@ CMakeFiles/robot_project.dir/src/main.cpp.o: ../src/main.cpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/SignalInterface.hpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/Output.hpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/IndexOutOfBoundsFault.hpp \
-  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/Gain.hpp \
-  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/math.h \
+  /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/PeripheralOutput.hpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/cmath \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/math.h \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/bits/math-vector.h \
@@ -1069,6 +1068,7 @@ CMakeFiles/robot_project.dir/src/main.cpp.o: ../src/main.cpp \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/tr1/poly_hermite.tcc \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/tr1/poly_laguerre.tcc \
   /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/tr1/riemann_zeta.tcc \
+  ../inc/customBlocks/customController.hpp \
   ../inc/MyRobotSafetyProperties.hpp \
   ../inc/ControlSystem.hpp \
   ../inc/MainSequence.hpp \
@@ -1107,8 +1107,6 @@ CMakeFiles/robot_project.dir/src/main.cpp.o: ../src/main.cpp \
 
 /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/bits/ss_flags.h:
 
-/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/11.4.0/include-fixed/bits/unistd_ext.h:
-
 /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/bits/unistd.h:
 
 /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/bits/getopt_core.h:
@@ -1141,6 +1139,8 @@ CMakeFiles/robot_project.dir/src/main.cpp.o: ../src/main.cpp \
 
 /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/signal.h:
 
+../inc/customBlocks/customController.hpp:
+
 ../src/main.cpp:
 
 /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/tr1/riemann_zeta.tcc:
@@ -1165,6 +1165,8 @@ CMakeFiles/robot_project.dir/src/main.cpp.o: ../src/main.cpp \
 
 /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/bits/mathcalls.h:
 
+/opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/bits/mathcalls-helper-functions.h:
+
 /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/bits/fp-fast-32.h:
 
 /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/bits/siginfo-consts.h:
@@ -1179,11 +1181,9 @@ CMakeFiles/robot_project.dir/src/main.cpp.o: ../src/main.cpp \
 
 /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/cmath:
 
-/opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/math.h:
+/opt/ost-devel/1.0/sysroots/x86_64-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/11.4.0/include-fixed/bits/unistd_ext.h:
 
-/opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/bits/mathcalls-helper-functions.h:
-
-/opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/Gain.hpp:
+/opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/PeripheralOutput.hpp:
 
 /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/IndexOutOfBoundsFault.hpp:
 
@@ -1193,7 +1193,7 @@ CMakeFiles/robot_project.dir/src/main.cpp.o: ../src/main.cpp \
 
 /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/Blockio.hpp:
 
-/opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/Constant.hpp:
+/opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/eeros/control/PeripheralInput.hpp:
 
 /opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/include/c++/11.4.0/condition_variable:
 
