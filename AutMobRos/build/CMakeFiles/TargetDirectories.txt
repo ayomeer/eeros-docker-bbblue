@@ -1,0 +1,3 @@
+/workspaces/AutMobRos/build/CMakeFiles/robot_project.dir
+/workspaces/AutMobRos/build/CMakeFiles/edit_cache.dir
+/workspaces/AutMobRos/build/CMakeFiles/rebuild_cache.dir

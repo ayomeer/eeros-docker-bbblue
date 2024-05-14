@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/workspaces/AutMobRos/**",
+                "/opt/ost-devel/1.0/sysroots/cortexa8hf-neon-poky-linux-gnueabi/usr/lib/"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "${default}",
+            "forcedInclude": []
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+0bab709fc3040e61e90d97b282006192 copyHalConfig
